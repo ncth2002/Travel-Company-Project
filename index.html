@@ -1,141 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=DM+Sans:wght@400;500;700&family=Paytone+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=DM+Sans:wght@400;500;700&family=Paytone+One&display=swap"
+    rel="stylesheet">
   <title>Tripp. - Travel Company</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Document</title>
   <style>
-    body { font-family: 'DM Sans', sans-serif; }
+    body {
+      font-family: 'Poppins', 'DM Sans', sans-serif;
+    }
   </style>
 </head>
-<body >
+
+<body>
 
 
-  <section class="relative mx-auto h-[1069px] w-[1920px] overflow-hidden bg-white font-['DM_Sans'] text-[#1f1416]">
+  <section
+    class="relative w-full overflow-hidden bg-white px-6 pb-[56px] font-['DM_Sans'] text-[#1f1416] lg:pb-[101px]">
 
-    <div class="absolute left-0 top-0 h-[900px] w-full bg-[url('/mountain.jpg')] bg-cover bg-center">
+    <!-- พื้นหลังภูเขา (จบเหนือขอบล่าง 169px ทั้งสองขนาด) -->
+    <div class="absolute inset-x-0 bottom-[169px] top-0 bg-[url('assets/images/mountain.jpg')] bg-cover bg-center">
       <div class="absolute inset-0 bg-white/65"></div>
-      <div class="absolute inset-x-0 top-0 h-[200px] bg-gradient-to-b from-white to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-[140px] bg-gradient-to-b from-white to-transparent lg:h-[200px]"></div>
     </div>
-    
-      <a href="#" class="absolute left-[250px] top-[36px] font-['Baloo_Bhai_2'] text-[48.12px] font-bold leading-none">
-        Tripp<span class="text-[#ff5b3a]">.</span>
-      </a>
-    
-      <ul class="absolute left-1/2 top-[46px] flex -translate-x-1/2 gap-16 text-[18px] leading-6 text-gray-400">
-        <li><a href="#" class="border-b-2 border-[#ff5b3a] text-[#1f1416]">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Tour Package</a></li>
-      </ul>
-    
-      <a href="#"
-         class="absolute left-[1494px] top-[26px] flex h-16 w-[176px] items-center justify-center rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white shadow-[0_10px_24px_rgba(255,91,58,0.25)]">
-        Contact Us
-      </a>
-    
-      <h1 class="absolute left-[250px] top-[305px] font-['Paytone_One'] text-[100px] font-normal leading-[110px]">
-        Fuel Mind<br />by Travel
-      </h1>
-    
-      <p class="absolute left-[250px] top-[558px] text-[18px] leading-[40px] text-slate-500">
-        Enthusiastically extend extensive customer service<br />
-        before best breed convergence completely.
-      </p>
-    
-      <div class="absolute left-[1060px] top-[217px] h-[550px] w-[550px] overflow-hidden rounded-full bg-gradient-to-b from-[#ff5b3a] to-[#ff8349]">
-        <svg class="absolute inset-0" viewBox="0 0 550 550" fill="none"
-             stroke="white" stroke-opacity="0.25" stroke-width="26">
-          <path d="M-10 116 C 90 104, 170 130, 290 116 S 480 102, 560 118" />
-          <path d="M-10 178 C 80 192, 190 164, 300 180 S 470 192, 560 176" />
-          <path d="M-10 240 C 100 226, 180 254, 290 240 S 470 226, 560 242" />
-          <path d="M-10 302 C 90 316, 190 288, 300 304 S 470 316, 560 300" />
-          <path d="M-10 364 C 100 350, 180 378, 290 364 S 470 350, 560 366" />
-          <path d="M-10 426 C 90 440, 190 412, 300 428 S 470 440, 560 424" />
-        </svg>
-      </div>
-    
-      <div class="absolute left-[963px] top-[383px] h-[178px] w-[160px] rounded-xl bg-white p-[13px] shadow-[0_10px_30px_rgba(0,0,0,0.12)]">
-        <div class="h-[78px] rounded-md bg-[#c4c4c4]"></div>
-        <p class="mt-[13px] text-[10px] font-medium leading-4">Mountain Scot</p>
-        <div class="mt-[11px] flex pl-[6px]">
-          <span class="h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#e5e5e5] text-[8px] ring-2 ring-white">+</span>
+
+    <!-- container กลางหน้า: ที่ 1920px เนื้อหาเริ่มที่ x = 250 -->
+    <div class="relative mx-auto w-full max-w-[1420px]">
+
+      <!-- ===== Navbar ===== -->
+      <nav class="relative flex h-[72px] items-center justify-between lg:h-[116px]">
+        <a href="#"
+          class="relative font-['Baloo_Bhai_2'] text-[28px] font-bold leading-none lg:top-[2px] lg:text-[48.12px]">
+          Tripp<span class="text-[#ff5b3a]">.</span>
+        </a>
+
+        <ul
+          class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 gap-16 text-[18px] leading-6 text-gray-400 lg:flex">
+          <li><a href="#" class="border-b-2 border-[#ff5b3a] text-[#1f1416]">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tour Package</a></li>
+        </ul>
+
+        <a href="#"
+          class="hidden h-16 w-[176px] items-center justify-center rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white shadow-[0_10px_24px_rgba(255,91,58,0.25)] lg:flex">
+          Contact Us
+        </a>
+
+        <button aria-label="Menu" class="lg:hidden">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="#1f1416">
+            <rect x="0" y="0" width="8" height="8" rx="2.5" />
+            <rect x="12" y="0" width="8" height="8" rx="2.5" />
+            <rect x="0" y="12" width="8" height="8" rx="2.5" />
+            <rect x="12" y="12" width="8" height="8" rx="2.5" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- ===== แถวหลัก: flex-wrap ===== -->
+      <div class="flex flex-wrap items-start justify-between">
+
+        <!-- วงกลม + การ์ดลอย (มือถือ: อยู่บนสุด / เดสก์ท็อป: อยู่ขวา) -->
+        <div
+          class="relative order-1 mt-[43px] flex w-full justify-center lg:order-2 lg:mr-[60px] lg:mt-[101px] lg:w-[550px]">
+
+          <div
+            class="relative h-[268px] w-[268px] overflow-hidden rounded-full bg-gradient-to-b from-[#ff5b3a] to-[#ff8349] lg:h-[550px] lg:w-[550px]">
+            <svg class="absolute inset-0 h-full w-full" viewBox="0 0 550 550" fill="none" stroke="white"
+              stroke-opacity="0.25" stroke-width="26">
+              <path d="M-10 116 C 90 104, 170 130, 290 116 S 480 102, 560 118" />
+              <path d="M-10 178 C 80 192, 190 164, 300 180 S 470 192, 560 176" />
+              <path d="M-10 240 C 100 226, 180 254, 290 240 S 470 226, 560 242" />
+              <path d="M-10 302 C 90 316, 190 288, 300 304 S 470 316, 560 300" />
+              <path d="M-10 364 C 100 350, 180 378, 290 364 S 470 350, 560 366" />
+              <path d="M-10 426 C 90 440, 190 412, 300 428 S 470 440, 560 424" />
+            </svg>
+          </div>
+
+          <!-- การ์ดลอย -->
+          <div
+            class="absolute -left-[14px] top-[70px] w-[75px] rounded-md bg-white p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.12)]
+                      lg:-left-[97px] lg:top-[166px] lg:h-[178px] lg:w-[160px] lg:rounded-xl lg:p-[13px] lg:shadow-[0_10px_30px_rgba(0,0,0,0.12)]">
+            <div class="h-[48px] rounded-[3px] bg-[#c4c4c4] lg:h-[78px] lg:rounded-md"></div>
+            <p class="mt-2 text-[6px] font-medium leading-[8px] lg:mt-[13px] lg:text-[10px] lg:leading-4">Mountain Scot
+            </p>
+            <div class="mt-2 flex pl-0.5 lg:mt-[11px] lg:pl-[6px]">
+              <span
+                class="h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span
+                class="-ml-1 h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span
+                class="-ml-1 h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span
+                class="-ml-1 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#e5e5e5] text-[6px] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:text-[8px] lg:ring-2">+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ข้อความ (มือถือ: ใต้วงกลม / เดสก์ท็อป: ซ้าย) -->
+        <div class="order-2 mt-8 w-full lg:order-1 lg:mt-[189px] lg:w-[560px]">
+          <h1 class="font-['Paytone_One'] text-[44px] font-normal leading-[48px] lg:text-[100px] lg:leading-[110px]">
+            Fuel Mind<br />by Travel
+          </h1>
+          <p class="mt-[7px] text-[16px] leading-9 text-slate-500 lg:mt-[33px] lg:text-[18px] lg:leading-[40px]">
+            Enthusiastically extend extensive<br class="lg:hidden" />
+            customer service<br class="hidden lg:block" />
+            before best<br class="lg:hidden" />
+            breed convergence completely.
+          </p>
         </div>
       </div>
-    
-      <div class="absolute left-[612px] top-[830px] h-[138px] w-[1058px] rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
-    
-        <div class="absolute left-[60px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+
+      <!-- ===== Search card / bar ===== -->
+      <div class="relative mt-[28px] w-full rounded-2xl bg-white px-[30px] py-6 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+                  lg:ml-auto lg:mt-[63px] lg:h-[138px] lg:w-[1058px] lg:p-0 lg:text-left">
+
+        <!-- Location -->
+        <div class="border-b border-gray-100 pb-5 lg:absolute lg:left-[60px] lg:top-[40px] lg:border-0 lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Location
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5 6 8l3.5-3.5" />
+            </svg>
           </p>
-          <p class="mt-2.5 text-[16px] font-bold leading-6">Cox's Bazar</p>
+          <p class="mt-[7px] text-[16px] font-bold leading-6 lg:mt-2.5">Cox's Bazar</p>
         </div>
-    
-        <div class="absolute left-[194px] top-[48px] h-[42px] w-px bg-gray-200"></div>
-    
-        <div class="absolute left-[234px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+
+        <div class="absolute left-[194px] top-[48px] hidden h-[42px] w-px bg-gray-200 lg:block"></div>
+
+        <!-- Date -->
+        <div class="border-b border-gray-100 py-5 lg:absolute lg:left-[234px] lg:top-[40px] lg:border-0 lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Date
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5 6 8l3.5-3.5" />
+            </svg>
           </p>
-          <p class="mt-2.5 whitespace-pre text-[16px] font-bold leading-6">Mon, 14 Mar -  Thu, 17 Mar</p>
+          <p class="mt-[7px] whitespace-pre text-[16px] font-bold leading-6 lg:mt-2.5">Mon, 14 Mar - Thu, 17 Mar</p>
         </div>
-    
-        <div class="absolute left-[468px] top-[48px] h-[42px] w-px bg-gray-200"></div>
-    
-        <div class="absolute left-[509px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+
+        <div class="absolute left-[468px] top-[48px] hidden h-[42px] w-px bg-gray-200 lg:block"></div>
+
+        <!-- Avg. Price -->
+        <div class="py-5 lg:absolute lg:left-[509px] lg:top-[40px] lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Avg. Price
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5 6 8l3.5-3.5" />
+            </svg>
           </p>
-          <p class="mt-2.5 text-[16px] font-bold leading-6">$300 - $600</p>
+          <p class="mt-[7px] text-[16px] font-bold leading-6 lg:mt-2.5">$300 - $600</p>
         </div>
-    
-        <button class="absolute left-[845px] top-[35px] flex h-[69px] w-[178px] items-center justify-center gap-[18px] rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white">
+
+        <!-- Explore -->
+        <button class="mx-auto flex h-[69px] w-[178px] items-center justify-center gap-[18px] rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white
+                       lg:absolute lg:left-[845px] lg:top-[35px] lg:mx-0">
           Explore
-          <svg width="26" height="14" viewBox="0 0 26 14" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="26" height="14" viewBox="0 0 26 14" fill="none" stroke="white" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M1 7h23M18 1l6 6-6 6" />
           </svg>
         </button>
       </div>
+
     </div>
   </section>
-  
+
   <section class="pt-40"> ... </section>
   <section class="pt-24"> ... </section>
 
 
 
-  <!-- Section 2: Kao -->
-  <section>
-    <!-- คนได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+  <!-- Section 2: Aim -->
+  <!-- 1. SERVICES SECTION (Figma: Services) -->
+  <!-- Desktop: เนื้อหากว้าง 1420px / Mobile 375: แสดงเฉพาะการ์ดแรก -->
+  <section class="bg-white pt-[31px] pb-[98px] md:pt-[71px] md:pb-[106px] px-0">
+    <div class="mx-auto max-w-[1420px]">
+
+      <!-- Heading row: หัวข้อ (ซ้าย) + View All Services (ขวา ชิดล่างหัวข้อ) -->
+      <div class="flex items-end justify-between pl-6 pr-[10px] md:px-0 mb-[30px] md:mb-[70px]">
+        <h2 class="font-bold text-[#221314] text-[24px] leading-[34px] md:text-[48px] md:leading-[68px] md:w-[574px]">
+          <span class="md:hidden">Start Your<br />Vacation with<br />Lost of Services!</span>
+          <span class="hidden md:inline">Start Your Vacation<br />with Lost of Services!</span>
+        </h2>
+        <a href="#"
+          class="flex items-center gap-4 font-['DM_Sans'] font-bold text-[18px] text-[#fe5b3e] no-underline whitespace-nowrap">
+          <span class="md:hidden">View All</span>
+          <span class="hidden md:inline">View All Services</span>
+          <!-- bi:arrow-left พลิกเป็นลูกศรชี้ขวา -->
+          <span class="relative block size-6 -scale-x-100">
+            <span class="absolute top-[21.87%] right-[6.25%] bottom-[21.87%] left-[6.24%]">
+              <img src="assets/icons/arrow-orange.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Cards: Desktop 4 คอลัมน์ gap 30 / Mobile แสดงใบแรกใบเดียว กว้าง 332.5 -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-[30px] justify-center">
+
+        <!-- Card 1: Family Vacations -->
+        <div
+          class="flex flex-col items-center w-full max-w-[332.5px] md:max-w-none mx-auto h-[272px] pt-[50px] rounded-[20px] bg-white border border-[#f0eded]">
+          <div class="relative size-[80px] rounded-[20px] bg-[rgba(254,91,62,0.1)]">
+            <div class="absolute left-5 top-5 size-10 overflow-clip">
+              <img src="assets/icons/family.svg" alt=""
+                class="absolute block max-w-none top-[-0.6%] right-[8.49%] bottom-0 left-[8.49%] w-[83.02%] h-[100.6%]" />
+            </div>
+          </div>
+          <h3 class="mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314]">Family
+            Vacations</h3>
+          <p class="mt-2 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">155 Properties</p>
+        </div>
+
+        <!-- Card 2: Scuba Diving (ซ่อนบน mobile) -->
+        <div
+          class="hidden md:flex flex-col items-center h-[272px] pt-[50px] rounded-[20px] bg-white border border-[#f0eded]">
+          <div class="relative size-[80px] rounded-[20px] bg-[rgba(254,91,62,0.1)]">
+            <!-- ไอคอนประกอบจาก 7 ชิ้น ตำแหน่งตาม Figma -->
+            <div class="absolute left-5 top-5 size-10 overflow-clip">
+              <img src="assets/icons/scuba-1.svg" alt=""
+                class="absolute block max-w-none top-[70.7%] right-[29.49%] bottom-0 left-[41.21%] size-auto w-[29.3%] h-[29.3%]" />
+              <img src="assets/icons/scuba-2.svg" alt=""
+                class="absolute block max-w-none top-0 right-[5.5%] bottom-[84.43%] left-[23.08%] w-[71.42%] h-[15.57%]" />
+              <img src="assets/icons/scuba-3.svg" alt=""
+                class="absolute block max-w-none top-[17.97%] right-0 bottom-[46.88%] left-[17.58%] w-[82.42%] h-[35.15%]" />
+              <img src="assets/icons/scuba-4.svg" alt=""
+                class="absolute block max-w-none top-[50.94%] right-[29.16%] bottom-[35.16%] left-[46.74%] w-[24.1%] h-[13.9%]" />
+              <img src="assets/icons/scuba-5.svg" alt=""
+                class="absolute block max-w-none top-[53.13%] right-[63.69%] bottom-[8.79%] left-0 w-[36.31%] h-[38.08%]" />
+              <img src="assets/icons/scuba-6.svg" alt=""
+                class="absolute block max-w-none top-[41.41%] right-[88.28%] bottom-[52.73%] left-0 w-[11.72%] h-[5.86%]" />
+              <img src="assets/icons/scuba-7.svg" alt=""
+                class="absolute block max-w-none top-0 right-[88.28%] bottom-[64.45%] left-0 w-[11.72%] h-[35.55%]" />
+            </div>
+          </div>
+          <h3 class="mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314]">Scuba
+            Diving</h3>
+          <p class="mt-2 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">143 Properties</p>
+        </div>
+
+        <!-- Card 3: Hunting Trip (การ์ดเด่น: ไม่มีเส้นขอบ มีเงา) -->
+        <div
+          class="hidden md:flex flex-col items-center h-[272px] pt-[50px] rounded-[20px] bg-white shadow-[5px_30px_56.128px_rgba(55,55,55,0.11)]">
+          <div class="relative size-[80px] rounded-[20px] bg-[rgba(254,91,62,0.1)]">
+            <img src="assets/icons/deer.svg" alt="" class="absolute left-5 top-5 size-10" />
+          </div>
+          <h3 class="mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314]">Hunting
+            Trip</h3>
+          <p class="mt-2 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">122 Properties</p>
+        </div>
+
+        <!-- Card 4: Mountain Bike (ซ่อนบน mobile) -->
+        <div
+          class="hidden md:flex flex-col items-center h-[272px] pt-[50px] rounded-[20px] bg-white border border-[#f0eded]">
+          <div class="relative size-[80px] rounded-[20px] bg-[rgba(254,91,62,0.1)]">
+            <img src="assets/icons/mountain-bike.svg" alt="" class="absolute left-5 top-5 size-10" />
+          </div>
+          <h3 class="mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314]">Mountain
+            Bike</h3>
+          <p class="mt-2 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">185 Properties</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PACKAGES SECTION (Figma: Packages) -->
+  <section id="packages" class="bg-white pt-[32px] pb-[80px] md:pt-[54px] md:pb-[160px] px-[10px] md:px-0">
+    <div class="mx-auto max-w-[1419px]">
+
+      <h2
+        class="mx-auto w-full max-w-[574px] text-center font-bold text-[#221314] text-[24px] leading-[34px] md:text-[48px] md:leading-[68px] mb-[30px] md:mb-[110px]">
+        Our Upcoming<br />Tour Package
+      </h2>
+
+      <!-- Cards: Desktop 3 คอลัมน์ gap 30 (ใบกลางยกขึ้น 40px) / Mobile แสดงใบแรกใบเดียว -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px] items-start">
+
+        <!-- Item 1: Eiffel Tower -->
+        <div>
+          <div class="relative h-[407.5px] md:h-[520px] rounded-[20px] bg-[#c4c4c4]">
+            <span
+              class="absolute top-[30px] right-[40px] md:top-[40px] text-white font-semibold text-[24px] md:text-[30px] leading-[32px] whitespace-nowrap">$599</span>
+          </div>
+          <div class="mt-6 px-[10px] flex items-center justify-between gap-x-4 gap-y-3 flex-wrap">
+            <div class="flex gap-4">
+              <span class="relative block size-6 mt-1 shrink-0">
+                <span class="absolute top-[8.33%] bottom-[8.33%] left-[14.58%] right-[14.58%]">
+                  <img src="assets/icons/location.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+                </span>
+              </span>
+              <div>
+                <h3 class="text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+                  Eiffel Tower</h3>
+                <p class="mt-0.5 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">5d - 4n</p>
+              </div>
+            </div>
+            <div class="flex gap-[5px]">
+              <span class="relative block size-4 md:size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="assets/icons/star.svg" /><img src="assets/icons/star-mobile.svg"
+                      alt="" class="absolute inset-0 block size-full max-w-none" />
+                  </picture>
+                </span></span>
+              <span class="relative block size-4 md:size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="assets/icons/star.svg" /><img src="assets/icons/star-mobile.svg"
+                      alt="" class="absolute inset-0 block size-full max-w-none" />
+                  </picture>
+                </span></span>
+              <span class="relative block size-4 md:size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="assets/icons/star.svg" /><img src="assets/icons/star-mobile.svg"
+                      alt="" class="absolute inset-0 block size-full max-w-none" />
+                  </picture>
+                </span></span>
+              <span class="relative block size-4 md:size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="assets/icons/star.svg" /><img src="assets/icons/star-mobile.svg"
+                      alt="" class="absolute inset-0 block size-full max-w-none" />
+                  </picture>
+                </span></span>
+              <span class="relative block size-4 md:size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="assets/icons/star.svg" /><img src="assets/icons/star-mobile.svg"
+                      alt="" class="absolute inset-0 block size-full max-w-none" />
+                  </picture>
+                </span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Big Bear Lake (ยกขึ้น 40px / ซ่อนบน mobile) -->
+        <div class="hidden md:block md:-mt-[40px]">
+          <div class="relative h-[520px] rounded-[20px] bg-[#c4c4c4]">
+            <span
+              class="absolute top-[40px] right-[40px] text-white font-semibold text-[30px] leading-[32px] whitespace-nowrap">$480</span>
+          </div>
+          <div class="mt-6 px-[10px] flex items-center justify-between gap-x-4 gap-y-3 flex-wrap">
+            <div class="flex gap-4">
+              <span class="relative block size-6 mt-1 shrink-0">
+                <span class="absolute top-[8.33%] bottom-[8.33%] left-[14.58%] right-[14.58%]">
+                  <img src="assets/icons/location.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+                </span>
+              </span>
+              <div>
+                <h3 class="text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+                  Big Bear Lake</h3>
+                <p class="mt-0.5 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">5d - 4n</p>
+              </div>
+            </div>
+            <div class="flex gap-[5px]">
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Colorado Springs (ซ่อนบน mobile) -->
+        <div class="hidden md:block">
+          <div class="relative h-[520px] rounded-[20px] bg-[#c4c4c4]">
+            <span
+              class="absolute top-[40px] right-[40px] text-white font-semibold text-[30px] leading-[32px] whitespace-nowrap">$550</span>
+          </div>
+          <div class="mt-6 px-[10px] flex items-center justify-between gap-x-4 gap-y-3 flex-wrap">
+            <div class="flex gap-4">
+              <span class="relative block size-6 mt-1 shrink-0">
+                <span class="absolute top-[8.33%] bottom-[8.33%] left-[14.58%] right-[14.58%]">
+                  <img src="assets/icons/location.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+                </span>
+              </span>
+              <div>
+                <h3 class="text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+                  Colorado Springs</h3>
+                <p class="mt-0.5 font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184]">5d - 4n</p>
+              </div>
+            </div>
+            <div class="flex gap-[5px]">
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+              <span class="relative block size-5"><span
+                  class="absolute top-[10.42%] right-[8.32%] bottom-[10.41%] left-[8.33%]"><img src="assets/icons/star.svg"
+                    alt="" class="absolute inset-0 block size-full max-w-none" /></span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View All Button: 180x70 -->
+      <div class="flex justify-center mt-[30px] md:mt-[40px]">
+        <a href="#"
+          class="flex items-center justify-center gap-[15px] w-[180px] h-[70px] rounded-[15px] bg-gradient-to-b from-[#fe5b3e] to-[#fe7b49] font-['DM_Sans'] font-bold text-[16px] text-white no-underline hover:opacity-90 transition-opacity">
+          View All
+          <span class="relative block size-6 -scale-x-100">
+            <span class="absolute top-[21.87%] right-[6.25%] bottom-[21.87%] left-[6.24%]">
+              <img src="assets/icons/arrow.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+            </span>
+          </span>
+        </a>
+      </div>
+
+    </div>
   </section>
 
   <!-- Section 3: Joe -->
   <section class="bg-white font-['DM_Sans'] text-[#1F1311] antialiased">
     <div class="mx-auto w-full max-w-[1920px] overflow-hidden">
-   
+
       <!-- ===================== SECTION 1 : MOST POPULAR ===================== -->
       <section class="bg-[#FFF9F3]">
-        <div class="mx-auto flex w-full max-w-[375px] flex-col px-5 py-10
+        <div
+          class="mx-auto flex w-full max-w-[375px] flex-col px-5 py-10
                     lg:max-w-none lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-[80px] lg:py-[200px] lg:pl-[40px] lg:pr-[260px]">
-   
+
           <!-- Text (ขวาบน desktop / บนสุดบน mobile) -->
           <div class="lg:w-[560px] lg:shrink-0">
             <h2 class="font-['Poppins'] text-[18px] font-semibold leading-[26px] text-[#1F1311]
@@ -143,20 +472,22 @@
               Most Popular<br class="hidden lg:block" />
               Destination of Us!
             </h2>
-            <p class="mt-4 text-[13px] leading-[22px] text-[#1F1311]/70 lg:mt-8 lg:max-w-[520px] lg:text-[16px] lg:leading-[32px]">
+            <p
+              class="mt-4 text-[13px] leading-[22px] text-[#1F1311]/70 lg:mt-8 lg:max-w-[520px] lg:text-[16px] lg:leading-[32px]">
               Credibly unleash economically sound e-business with bleeding-edge users.
               Uniquely simplify mission-critical benefits with cross-unit manufactured
               products. Energistically re-engineer
             </p>
-            <a href="#"
-               class="mt-8 hidden h-[56px] w-[150px] items-center justify-center gap-3 rounded-[12px]
+            <a href="#" class="mt-8 hidden h-[56px] w-[150px] items-center justify-center gap-3 rounded-[12px]
                       bg-gradient-to-r from-[#FF7A45] to-[#FF6B4A] font-['Poppins'] text-[14px] font-medium text-white
                       shadow-[0_12px_24px_rgba(255,107,74,0.3)] lg:inline-flex">
               View All
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h16m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
           </div>
-   
+
           <!--
             Carousel แบบเลือกได้ 3 ตัวเลือก (ไม่ใช้ JS)
             - radio ซ่อนไว้ (sr-only) 3 ตัว: dest-1 / dest-2 / dest-3
@@ -166,32 +497,39 @@
           -->
           <div class="relative mt-6 grid min-w-0 grid-cols-[1fr_auto_auto_auto_1fr] gap-x-3
                       lg:mt-0 lg:flex-1 lg:grid-cols-3 lg:gap-x-[30px]">
-   
-            <input type="radio" name="destination" id="dest-1" aria-label="Great Wall of China" class="peer/d1 sr-only" />
-            <input type="radio" name="destination" id="dest-2" aria-label="Lake Powell" class="peer/d2 sr-only" checked />
+
+            <input type="radio" name="destination" id="dest-1" aria-label="Great Wall of China"
+              class="peer/d1 sr-only" />
+            <input type="radio" name="destination" id="dest-2" aria-label="Lake Powell" class="peer/d2 sr-only"
+              checked />
             <input type="radio" name="destination" id="dest-3" aria-label="Deep Creek Lake" class="peer/d3 sr-only" />
-   
+
             <!-- card 1 -->
             <label for="dest-1"
-                   class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
+              class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
                           transition-all duration-300 ease-out
                           peer-checked/d1:block peer-focus-visible/d1:ring-4 peer-focus-visible/d1:ring-[#FF6B4A]/40
                           lg:col-span-1 lg:block lg:h-[450px] lg:rounded-[20px]
                           lg:peer-checked/d1:-translate-y-6 lg:peer-checked/d1:shadow-[0_30px_50px_-12px_rgba(31,19,17,0.35)]">
               <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 lg:p-8">
                 <div>
-                  <h3 class="font-['Poppins'] text-[14px] font-medium text-white lg:text-[20px]">Great Wall of China</h3>
+                  <h3 class="font-['Poppins'] text-[14px] font-medium text-white lg:text-[20px]">Great Wall of China
+                  </h3>
                   <p class="mt-1 text-[12px] text-white/60 lg:text-[16px]">Beijing, China</p>
                 </div>
-                <div class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">4.8
-                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z"/></svg>
+                <div
+                  class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">
+                  4.8
+                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z" />
+                  </svg>
                 </div>
               </div>
             </label>
-   
+
             <!-- card 2 -->
             <label for="dest-2"
-                   class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
+              class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
                           transition-all duration-300 ease-out
                           peer-checked/d2:block peer-focus-visible/d2:ring-4 peer-focus-visible/d2:ring-[#FF6B4A]/40
                           lg:col-span-1 lg:block lg:h-[450px] lg:rounded-[20px]
@@ -201,15 +539,19 @@
                   <h3 class="font-['Poppins'] text-[14px] font-medium text-white lg:text-[20px]">Lake Powell</h3>
                   <p class="mt-1 text-[12px] text-white/60 lg:text-[16px]">U.S.A</p>
                 </div>
-                <div class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">4.8
-                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z"/></svg>
+                <div
+                  class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">
+                  4.8
+                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z" />
+                  </svg>
                 </div>
               </div>
             </label>
-   
+
             <!-- card 3 -->
             <label for="dest-3"
-                   class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
+              class="relative col-span-5 hidden h-[350px] cursor-pointer overflow-hidden rounded-[12px] bg-[#C4C4C4]
                           transition-all duration-300 ease-out
                           peer-checked/d3:block peer-focus-visible/d3:ring-4 peer-focus-visible/d3:ring-[#FF6B4A]/40
                           lg:col-span-1 lg:block lg:h-[450px] lg:rounded-[20px]
@@ -219,74 +561,86 @@
                   <h3 class="font-['Poppins'] text-[14px] font-medium text-white lg:text-[20px]">Deep Creek Lake</h3>
                   <p class="mt-1 text-[12px] text-white/60 lg:text-[16px]">Maryland</p>
                 </div>
-                <div class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">4.8
-                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z"/></svg>
+                <div
+                  class="flex items-center gap-1.5 font-['Poppins'] text-[14px] font-medium text-white lg:text-[18px]">
+                  4.8
+                  <svg class="h-3.5 w-3.5 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3 7 7.5.6-5.7 5 1.8 7.4L12 18l-6.6 4 1.8-7.4-5.7-5L9 9z" />
+                  </svg>
                 </div>
               </div>
             </label>
-   
+
             <!-- Dots (mobile) : กดเพื่อเลือกการ์ด -->
             <label for="dest-1" aria-label="Great Wall of China"
-                   class="col-start-2 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
+              class="col-start-2 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
                           peer-checked/d1:bg-[#FF6B4A] peer-checked/d1:ring-[3px] peer-checked/d1:ring-[#D9D9D9] lg:hidden"></label>
             <label for="dest-2" aria-label="Lake Powell"
-                   class="col-start-3 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
+              class="col-start-3 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
                           peer-checked/d2:bg-[#FF6B4A] peer-checked/d2:ring-[3px] peer-checked/d2:ring-[#D9D9D9] lg:hidden"></label>
             <label for="dest-3" aria-label="Deep Creek Lake"
-                   class="col-start-4 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
+              class="col-start-4 row-start-2 mt-5 block h-[9px] w-[9px] cursor-pointer rounded-full bg-[#D9D9D9] transition-all
                           peer-checked/d3:bg-[#FF6B4A] peer-checked/d3:ring-[3px] peer-checked/d3:ring-[#D9D9D9] lg:hidden"></label>
-   
+
             <!-- Arrows (desktop) : ย้อนกลับ — แสดงเฉพาะตัวที่ตรงกับการ์ดที่เลือกอยู่ -->
-            <label for="dest-1" aria-label="Previous"
-                   class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
+            <label for="dest-1" aria-label="Previous" class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
                           lg:col-start-1 lg:row-start-2 lg:mt-12 lg:peer-checked/d2:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </label>
-            <label for="dest-2" aria-label="Previous"
-                   class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
+            <label for="dest-2" aria-label="Previous" class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
                           lg:col-start-1 lg:row-start-2 lg:mt-12 lg:peer-checked/d3:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </label>
-            <span aria-hidden="true"
-                  class="hidden justify-self-start text-[#FF6B4A] opacity-40
+            <span aria-hidden="true" class="hidden justify-self-start text-[#FF6B4A] opacity-40
                          lg:col-start-1 lg:row-start-2 lg:mt-12 lg:peer-checked/d1:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M34 12H3m8-8L3 12l8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </span>
-   
+
             <!-- Arrows (desktop) : ถัดไป -->
-            <label for="dest-2" aria-label="Next"
-                   class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
+            <label for="dest-2" aria-label="Next" class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
                           lg:col-start-1 lg:row-start-2 lg:ml-[60px] lg:mt-12 lg:peer-checked/d1:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </label>
-            <label for="dest-3" aria-label="Next"
-                   class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
+            <label for="dest-3" aria-label="Next" class="hidden cursor-pointer justify-self-start text-[#FF6B4A] hover:opacity-70
                           lg:col-start-1 lg:row-start-2 lg:ml-[60px] lg:mt-12 lg:peer-checked/d2:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </label>
-            <span aria-hidden="true"
-                  class="hidden justify-self-start text-[#FF6B4A] opacity-40
+            <span aria-hidden="true" class="hidden justify-self-start text-[#FF6B4A] opacity-40
                          lg:col-start-1 lg:row-start-2 lg:ml-[60px] lg:mt-12 lg:peer-checked/d3:block">
-              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-7 w-9" viewBox="0 0 36 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M2 12h31m-8-8 8 8-8 8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </span>
-   
+
             <!-- View All (mobile) -->
-            <a href="#"
-               class="col-span-5 row-start-3 mt-8 inline-flex h-[44px] w-[108px] items-center justify-center gap-2 justify-self-center rounded-[8px]
+            <a href="#" class="col-span-5 row-start-3 mt-8 inline-flex h-[44px] w-[108px] items-center justify-center gap-2 justify-self-center rounded-[8px]
                       bg-gradient-to-r from-[#FF7A45] to-[#FF6B4A] font-['Poppins'] text-[12px] font-medium text-white
                       shadow-[0_8px_16px_rgba(255,107,74,0.3)] lg:hidden">
               View All
-              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h16m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
           </div>
         </div>
       </section>
-   
+
       <!-- ===================== SECTION 2 : FEEDBACK ===================== -->
       <section class="bg-white">
-        <div class="mx-auto flex w-full max-w-[375px] flex-col items-center px-5 py-12
+        <div
+          class="mx-auto flex w-full max-w-[375px] flex-col items-center px-5 py-12
                     lg:max-w-none lg:flex-row lg:items-center lg:justify-center lg:gap-[160px] lg:px-[240px] lg:py-[200px]">
-   
+
           <!-- Circle image -->
           <div class="flex h-[290px] w-[290px] shrink-0 items-center justify-center rounded-full border border-black/5
                       lg:h-[640px] lg:w-[640px]">
@@ -301,58 +655,74 @@
                 <rect width="540" height="540" fill="url(#g)" />
                 <g fill="#FFFFFF" fill-opacity="0.25">
                   <path d="M0 90 C90 70 160 110 270 95 S450 70 540 100 V135 C450 120 360 150 270 135 S90 115 0 130Z" />
-                  <path d="M0 170 C100 150 170 190 280 175 S450 155 540 180 V215 C450 200 370 230 280 215 S100 200 0 210Z" />
-                  <path d="M0 255 C90 235 180 275 280 260 S450 240 540 265 V300 C450 285 370 315 280 300 S90 285 0 295Z" />
-                  <path d="M0 340 C100 320 170 360 280 345 S450 325 540 350 V385 C450 370 360 400 280 385 S100 370 0 380Z" />
-                  <path d="M0 425 C90 405 180 445 280 430 S450 410 540 435 V470 C450 455 370 485 280 470 S90 455 0 465Z" />
+                  <path
+                    d="M0 170 C100 150 170 190 280 175 S450 155 540 180 V215 C450 200 370 230 280 215 S100 200 0 210Z" />
+                  <path
+                    d="M0 255 C90 235 180 275 280 260 S450 240 540 265 V300 C450 285 370 315 280 300 S90 285 0 295Z" />
+                  <path
+                    d="M0 340 C100 320 170 360 280 345 S450 325 540 350 V385 C450 370 360 400 280 385 S100 370 0 380Z" />
+                  <path
+                    d="M0 425 C90 405 180 445 280 430 S450 410 540 435 V470 C450 455 370 485 280 470 S90 455 0 465Z" />
                 </g>
               </svg>
             </div>
           </div>
-   
+
           <!-- Testimonial -->
           <div class="mt-10 w-full min-w-0 lg:mt-0 lg:w-[560px] lg:shrink-0">
-            <h2 class="font-['Poppins'] text-[16px] font-semibold leading-[22px] text-[#1F1311] lg:text-[40px] lg:font-bold lg:leading-[54px]">
+            <h2
+              class="font-['Poppins'] text-[16px] font-semibold leading-[22px] text-[#1F1311] lg:text-[40px] lg:font-bold lg:leading-[54px]">
               Feedback from<br />
               Our Customers
             </h2>
-   
-            <div class="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden mt-5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth lg:mt-8">
+
+            <div
+              class="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden mt-5 flex snap-x snap-mandatory overflow-x-auto scroll-smooth lg:mt-8">
               <figure id="fb-1" class="w-full shrink-0 snap-center">
-                <blockquote class="font-['Poppins'] text-[15px] font-medium leading-[24px] text-[#1F1311] lg:text-[20px] lg:leading-[36px]">
+                <blockquote
+                  class="font-['Poppins'] text-[15px] font-medium leading-[24px] text-[#1F1311] lg:text-[20px] lg:leading-[36px]">
                   “I’ve Went ot America from Tripp Play about 1 years ago. Tripp make the prototyping
                   process so easy and faster. I feel this is the best apps for Prototyping use”
                 </blockquote>
-                <figcaption class="mt-5 text-[12px] text-[#1F1311]/60 lg:mt-6 lg:text-[14px]">— Ferdous - CEO of Coco</figcaption>
+                <figcaption class="mt-5 text-[12px] text-[#1F1311]/60 lg:mt-6 lg:text-[14px]">— Ferdous - CEO of Coco
+                </figcaption>
               </figure>
               <figure id="fb-2" class="w-full shrink-0 snap-center">
-                <blockquote class="font-['Poppins'] text-[15px] font-medium leading-[24px] text-[#1F1311] lg:text-[20px] lg:leading-[36px]">
+                <blockquote
+                  class="font-['Poppins'] text-[15px] font-medium leading-[24px] text-[#1F1311] lg:text-[20px] lg:leading-[36px]">
                   “I’ve Went ot America from Tripp Play about 1 years ago. Tripp make the prototyping
                   process so easy and faster. I feel this is the best apps for Prototyping use”
                 </blockquote>
-                <figcaption class="mt-5 text-[12px] text-[#1F1311]/60 lg:mt-6 lg:text-[14px]">— Ferdous - CEO of Coco</figcaption>
+                <figcaption class="mt-5 text-[12px] text-[#1F1311]/60 lg:mt-6 lg:text-[14px]">— Ferdous - CEO of Coco
+                </figcaption>
               </figure>
             </div>
-   
+
             <div class="mt-6 flex items-center gap-3 lg:mt-8">
               <a href="#fb-1" aria-label="Previous"
-                 class="flex h-6 w-6 items-center justify-center rounded-full bg-[#FF6B4A] text-white lg:h-8 lg:w-8">
-                <svg class="h-3 w-3 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5m6-6-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-[#FF6B4A] text-white lg:h-8 lg:w-8">
+                <svg class="h-3 w-3 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4">
+                  <path d="M19 12H5m6-6-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </a>
               <a href="#fb-2" aria-label="Next"
-                 class="flex h-6 w-6 items-center justify-center rounded-full bg-[#FF6B4A]/50 text-white lg:h-8 lg:w-8">
-                <svg class="h-3 w-3 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                class="flex h-6 w-6 items-center justify-center rounded-full bg-[#FF6B4A]/50 text-white lg:h-8 lg:w-8">
+                <svg class="h-3 w-3 lg:h-4 lg:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.4">
+                  <path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
-   
+
     </div>
   </section>
 
   <!-- Section 4: Nueng -->
- <!-- Part 1: World Top Visiting Place (Figma: Places) -->
+  <!-- Part 1: World Top Visiting Place (Figma: Places) -->
   <!-- Desktop 1920: แผนที่กว้าง 1522px (79.27%) / Mobile 375: แผนที่กว้าง 355px (เว้นขอบ 10px) -->
   <section class="relative z-10 w-full px-[10px] md:px-0 pt-[47px] md:pt-[69px] font-['Poppins']">
 
@@ -367,8 +737,8 @@
     <div
       class="relative mx-auto w-full md:w-[79.27%] max-w-[1522px] aspect-[355/186.5] md:aspect-[1522/743] select-none">
       <picture>
-        <source media="(min-width: 768px)" srcset="assets/world-map.svg" />
-        <img src="assets/world-map-mobile.svg" alt="World Map" class="block w-full h-full pointer-events-none" />
+        <source media="(min-width: 768px)" srcset="assets/maps/world-map.svg" />
+        <img src="assets/maps/world-map-mobile.svg" alt="World Map" class="block w-full h-full pointer-events-none" />
       </picture>
 
       <!-- Pins: left = กึ่งกลางวงกลม, top = ขอบบนของวงกลม (ค่า % คำนวณจากตำแหน่งใน Figma) -->
@@ -380,7 +750,7 @@
           <div
             class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
           </div>
-          <img src="assets/mexico.svg" alt="Mexico" class="absolute inset-0 size-full" />
+          <img src="assets/icons/mexico.svg" alt="Mexico" class="absolute inset-0 size-full" />
         </div>
         <p
           class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
@@ -396,7 +766,7 @@
           <div
             class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
           </div>
-          <img src="assets/france.svg" alt="France" class="absolute inset-0 size-full" />
+          <img src="assets/icons/france.svg" alt="France" class="absolute inset-0 size-full" />
         </div>
         <p
           class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
@@ -412,7 +782,7 @@
           <div
             class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
           </div>
-          <img src="assets/australia.svg" alt="Australia" class="absolute inset-0 size-full" />
+          <img src="assets/icons/australia.svg" alt="Australia" class="absolute inset-0 size-full" />
         </div>
         <p
           class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
@@ -431,7 +801,7 @@
 
     <!-- Background image -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <img src="assets/snow-background.png" alt=""
+      <img src="assets/images/snow-background.png" alt=""
         class="absolute left-0 top-0 md:top-[-16.67%] w-full h-full md:h-[133.33%] max-w-none object-cover" />
     </div>
     <!-- Gradient overlay: Mobile 202.35deg / Desktop 186.3deg -->
@@ -461,7 +831,7 @@
           <!-- bi:arrow-left พลิกเป็นลูกศรชี้ขวา -->
           <span class="relative block size-6 -scale-x-100">
             <span class="absolute top-[21.87%] right-[6.25%] bottom-[21.87%] left-[6.24%]">
-              <img src="assets/arrow.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+              <img src="assets/icons/arrow.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
             </span>
           </span>
         </button>
