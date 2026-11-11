@@ -96,12 +96,55 @@
             <div class="text-[#ff5722] text-[12px] tracking-[2px] mt-[2px]">★★★★★</div>
           </div>
         </div>
+      </section>
+   
+    </div>
+  </section>
 
-        <!-- Item 3: Colorado Springs -->
-        <div class="hidden md:flex flex-col items-center">
-          <div class="w-full bg-[#c8c8c8] rounded-[20px] h-[440px] relative overflow-hidden mb-[20px]">
-            <span class="absolute top-[24px] right-[24px] text-white font-bold text-[18px] tracking-[0.5px]">$550</span>
+  <!-- Section 4: Nueng -->
+ <!-- Part 1: World Top Visiting Place (Figma: Places) -->
+  <!-- Desktop 1920: แผนที่กว้าง 1522px (79.27%) / Mobile 375: แผนที่กว้าง 355px (เว้นขอบ 10px) -->
+  <section class="relative z-10 w-full px-[10px] md:px-0 pt-[47px] md:pt-[69px] font-['Poppins']">
+
+    <!-- Title: Mobile 24/34, Desktop 48/68 -->
+    <h2
+      class="mx-auto max-w-[574px] text-center text-2xl leading-[34px] md:text-[48px] md:leading-[68px] font-bold text-[#221314] mb-[39.5px] md:mb-[90px]">
+      World Top Visiting <br />
+      Place in 2021
+    </h2>
+
+    <!-- Map container (Mobile 355x186.5 / Desktop 1522x743) -->
+    <div
+      class="relative mx-auto w-full md:w-[79.27%] max-w-[1522px] aspect-[355/186.5] md:aspect-[1522/743] select-none">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/maps/world-map.svg" />
+        <img src="assets/maps/world-map-mobile.svg" alt="World Map" class="block w-full h-full pointer-events-none" />
+      </picture>
+
+      <!-- Pins: left = กึ่งกลางวงกลม, top = ขอบบนของวงกลม (ค่า % คำนวณจากตำแหน่งใน Figma) -->
+
+      <!-- Mexico -->
+      <div
+        class="absolute -translate-x-1/2 flex flex-col items-center top-[36.88%] left-[16.09%] md:top-[38.76%] md:left-[18.48%]">
+        <div class="relative size-[28.26px] md:size-[120px]">
+          <div
+            class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
           </div>
+          <img src="/assets/icons/mexico.svg" alt="Mexico" class="absolute inset-0 size-full" />
+        </div>
+        <p
+          class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+          Mexico</p>
+        <p class="hidden md:block font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184] whitespace-nowrap">03 Tour
+        </p>
+      </div>
+
+      <!-- France -->
+      <div
+        class="absolute -translate-x-1/2 flex flex-col items-center top-[24.38%] left-[48.93%] md:top-[25.44%] md:left-[51%]">
+        <div class="relative size-[28.26px] md:size-[120px]">
+          <div
+            class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
           <div class="w-full flex justify-between items-start text-left px-[4px]">
             <div>
               <h3 class="text-[16px] font-bold text-[#18100b] flex items-center gap-[8px]">
@@ -111,8 +154,29 @@
             </div>
             <div class="text-[#ff5722] text-[12px] tracking-[2px] mt-[2px]">★★★★★</div>
           </div>
+          <img src="assets/icons/france.svg" alt="France" class="absolute inset-0 size-full" />
         </div>
+        <p
+          class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+          France</p>
+        <p class="hidden md:block font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184] whitespace-nowrap">03 Tour
+        </p>
+      </div>
 
+      <!-- Australia -->
+      <div
+        class="absolute -translate-x-1/2 flex flex-col items-center top-[60.75%] left-[83.62%] md:top-[64.2%] md:left-[85.37%]">
+        <div class="relative size-[28.26px] md:size-[120px]">
+          <div
+            class="absolute inset-0 rounded-full bg-white border-[1.178px] md:border-[5px] border-white shadow-[1.178px_7.065px_13.218px_rgba(55,55,55,0.3)] md:shadow-[5px_30px_56.128px_rgba(55,55,55,0.3)]">
+          </div>
+          <img src="assets/icons/australia.svg" alt="Australia" class="absolute inset-0 size-full" />
+        </div>
+        <p
+          class="hidden md:block mt-6 text-[24px] leading-[32px] font-semibold tracking-[0.2px] text-[#221314] whitespace-nowrap">
+          Australia</p>
+        <p class="hidden md:block font-['DM_Sans'] text-[18px] leading-[28px] text-[#5a7184] whitespace-nowrap">02 Tour
+        </p>
       </div>
 
       <!-- View All Button -->
@@ -121,6 +185,85 @@
       </button>
     </div>
   </section>
+
+  <!-- Part 2: Subscribe & Footer (Figma: Footer) -->
+  <!-- พื้นหลังซ้อนทับขอบล่างของ Places: Mobile 66px / Desktop 46px (ตามแบบ) -->
+  <footer
+    class="relative z-0 w-full -mt-[66px] md:-mt-[46px] min-h-[628px] md:min-h-[864px] overflow-hidden font-['DM_Sans']">
+
+    <!-- Background image -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img src="assets/images/snow-background.png" alt=""
+        class="absolute left-0 top-0 md:top-[-16.67%] w-full h-full md:h-[133.33%] max-w-none object-cover" />
+    </div>
+    <!-- Gradient overlay: Mobile 202.35deg / Desktop 186.3deg -->
+    <div
+      class="absolute inset-0 pointer-events-none bg-[linear-gradient(202.35deg,#fff_26.439%,rgba(255,255,255,0.6)_91.68%)] md:bg-[linear-gradient(186.3deg,#fff_26.439%,rgba(255,255,255,0.6)_91.68%)]">
+    </div>
+
+    <!-- Content: Desktop เริ่มที่ x=250 (max-w 1420 กลางหน้า) / Mobile เว้นซ้าย 24 -->
+    <div class="relative mx-auto max-w-[1420px] px-6 md:px-0 pt-[146px] md:pt-[266px] pb-[18px] md:pb-[60px]">
+
+      <!-- Title: Mobile 30/40, Desktop 48/68 -->
+      <h2
+        class="w-full max-w-[528px] font-['Poppins'] text-[30px] leading-[40px] md:text-[48px] md:leading-[68px] font-bold text-[#221314] mb-[30px] md:mb-[50px]">
+        Subscribe <br />
+        for every Tour <br />
+        News &amp; Tips
+      </h2>
+
+      <!-- Form (Mobile 355x100 เยื้องออกจาก padding / Desktop 574x100) -->
+      <form
+        class="-mx-3.5 md:mx-0 md:max-w-[574px] flex flex-wrap items-center gap-x-2 gap-y-3 min-h-[100px] p-[15px] rounded-[20px] bg-white shadow-[5px_20px_40px_rgba(158,161,160,0.3)] md:shadow-[10px_30px_40px_rgba(158,161,160,0.25)]">
+        <input type="email" required placeholder="Your Email"
+          class="flex-1 min-w-[100px] px-[15px] text-[16px] font-medium text-[#221314] bg-transparent outline-none placeholder-[#a8a8a8]" />
+        <button type="submit"
+          class="shrink-0 flex items-center justify-center gap-[5px] w-[160px] md:w-[177px] h-[70px] rounded-[15px] bg-gradient-to-b from-[#fe5b3e] to-[#fe7b49] text-white text-[16px] font-bold hover:opacity-90 transition-opacity">
+          Subscribe
+          <!-- bi:arrow-left พลิกเป็นลูกศรชี้ขวา -->
+          <span class="relative block size-6 -scale-x-100">
+            <span class="absolute top-[21.87%] right-[6.25%] bottom-[21.87%] left-[6.24%]">
+              <img src="assets/icons/arrow.svg" alt="" class="absolute inset-0 block size-full max-w-none" />
+            </span>
+          </span>
+        </button>
+      </form>
+
+      <!-- Footer bottom (flex-wrap: Mobile โซเชียลตกลงบรรทัดใหม่ / Desktop อยู่แถวเดียวกัน) -->
+      <div class="mt-10 md:mt-[90px] md:max-w-[690px] flex flex-wrap items-end justify-between gap-x-6 gap-y-4">
+
+        <div class="w-full md:w-auto">
+          <p class="h-[61.5px] font-['Baloo_Bhai_2'] text-[38.421px] leading-[1.6] font-bold text-[#221314]">Tripp<span
+              class="text-[#fe5b3e]">.</span></p>
+          <p
+            class="mt-0 md:mt-[10px] text-[18px] leading-[28px] md:leading-[23px] font-medium text-[#221314] whitespace-nowrap">
+            Copyright©Tripp.<br class="md:hidden" />All right reserved
+          </p>
+        </div>
+
+        <!-- Social icons -->
+        <div class="flex flex-wrap items-center gap-[7px]">
+          <a href="#" aria-label="Google"
+            class="flex items-center justify-center w-[42px] h-10 rounded-full bg-[#e2e2ea]/50 text-[16px] text-[#221314] hover:text-[#fe5b3e] transition-colors">
+            <i class="fa-brands fa-google"></i>
+          </a>
+          <a href="#" aria-label="Twitter"
+            class="flex items-center justify-center w-[42px] h-10 rounded-full bg-[#e2e2ea]/50 text-[16px] text-[#221314] hover:text-[#fe5b3e] transition-colors">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="Instagram"
+            class="flex items-center justify-center size-10 rounded-full bg-[#e2e2ea]/50 text-[16px] text-[#221314] hover:text-[#fe5b3e] transition-colors">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn"
+            class="flex items-center justify-center size-10 rounded-full bg-[#e2e2ea]/50 text-[16px] text-[#221314] hover:text-[#fe5b3e] transition-colors">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
