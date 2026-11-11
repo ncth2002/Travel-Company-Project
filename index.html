@@ -18,102 +18,139 @@
   <style>
     body { font-family: 'DM Sans', sans-serif; }
   </style>
-<!-- </head> -->
+</head>
 <body >
 
 
-  <section class="relative mx-auto h-[1069px] w-[1920px] overflow-hidden bg-white font-['DM_Sans'] text-[#1f1416]">
+  <section class="relative w-full overflow-hidden bg-white px-6 pb-[56px] font-['DM_Sans'] text-[#1f1416] lg:pb-[101px]">
 
-    <div class="absolute left-0 top-0 h-[900px] w-full bg-[url('assets/images/mountain.jpg')] bg-cover bg-center">
+    <!-- พื้นหลังภูเขา (จบเหนือขอบล่าง 169px ทั้งสองขนาด) -->
+    <div class="absolute inset-x-0 bottom-[169px] top-0 bg-[url('assets/images/mountain.jpg')] bg-cover bg-center">
       <div class="absolute inset-0 bg-white/65"></div>
-      <div class="absolute inset-x-0 top-0 h-[200px] bg-gradient-to-b from-white to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-[140px] bg-gradient-to-b from-white to-transparent lg:h-[200px]"></div>
     </div>
-    
-      <a href="#" class="absolute left-[250px] top-[36px] font-['Baloo_Bhai_2'] text-[48.12px] font-bold leading-none">
-        Tripp<span class="text-[#ff5b3a]">.</span>
-      </a>
-    
-      <ul class="absolute left-1/2 top-[46px] flex -translate-x-1/2 gap-16 text-[18px] leading-6 text-gray-400">
-        <li><a href="#" class="border-b-2 border-[#ff5b3a] text-[#1f1416]">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Tour Package</a></li>
-      </ul>
-    
-      <a href="#"
-         class="absolute left-[1494px] top-[26px] flex h-16 w-[176px] items-center justify-center rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white shadow-[0_10px_24px_rgba(255,91,58,0.25)]">
-        Contact Us
-      </a>
-    
-      <h1 class="absolute left-[250px] top-[305px] font-['Paytone_One'] text-[100px] font-normal leading-[110px]">
-        Fuel Mind<br />by Travel
-      </h1>
-    
-      <p class="absolute left-[250px] top-[558px] text-[18px] leading-[40px] text-slate-500">
-        Enthusiastically extend extensive customer service<br />
-        before best breed convergence completely.
-      </p>
-    
-      <div class="absolute left-[1060px] top-[217px] h-[550px] w-[550px] overflow-hidden rounded-full bg-gradient-to-b from-[#ff5b3a] to-[#ff8349]">
-        <svg class="absolute inset-0" viewBox="0 0 550 550" fill="none"
-             stroke="white" stroke-opacity="0.25" stroke-width="26">
-          <path d="M-10 116 C 90 104, 170 130, 290 116 S 480 102, 560 118" />
-          <path d="M-10 178 C 80 192, 190 164, 300 180 S 470 192, 560 176" />
-          <path d="M-10 240 C 100 226, 180 254, 290 240 S 470 226, 560 242" />
-          <path d="M-10 302 C 90 316, 190 288, 300 304 S 470 316, 560 300" />
-          <path d="M-10 364 C 100 350, 180 378, 290 364 S 470 350, 560 366" />
-          <path d="M-10 426 C 90 440, 190 412, 300 428 S 470 440, 560 424" />
-        </svg>
-      </div>
-    
-      <div class="absolute left-[963px] top-[383px] h-[178px] w-[160px] rounded-xl bg-white p-[13px] shadow-[0_10px_30px_rgba(0,0,0,0.12)]">
-        <div class="h-[78px] rounded-md bg-[#c4c4c4]"></div>
-        <p class="mt-[13px] text-[10px] font-medium leading-4">Mountain Scot</p>
-        <div class="mt-[11px] flex pl-[6px]">
-          <span class="h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] h-[35px] w-[35px] rounded-full bg-[#c4c4c4] ring-2 ring-white"></span>
-          <span class="-ml-[7px] flex h-[35px] w-[35px] items-center justify-center rounded-full bg-[#e5e5e5] text-[8px] ring-2 ring-white">+</span>
+  
+    <!-- container กลางหน้า: ที่ 1920px เนื้อหาเริ่มที่ x = 250 -->
+    <div class="relative mx-auto w-full max-w-[1420px]">
+  
+      <!-- ===== Navbar ===== -->
+      <nav class="relative flex h-[72px] items-center justify-between lg:h-[116px]">
+        <a href="#" class="relative font-['Baloo_Bhai_2'] text-[28px] font-bold leading-none lg:top-[2px] lg:text-[48.12px]">
+          Tripp<span class="text-[#ff5b3a]">.</span>
+        </a>
+  
+        <ul class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 gap-16 text-[18px] leading-6 text-gray-400 lg:flex">
+          <li><a href="#" class="border-b-2 border-[#ff5b3a] text-[#1f1416]">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tour Package</a></li>
+        </ul>
+  
+        <a href="#" class="hidden h-16 w-[176px] items-center justify-center rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white shadow-[0_10px_24px_rgba(255,91,58,0.25)] lg:flex">
+          Contact Us
+        </a>
+  
+        <button aria-label="Menu" class="lg:hidden">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="#1f1416">
+            <rect x="0" y="0" width="8" height="8" rx="2.5" />
+            <rect x="12" y="0" width="8" height="8" rx="2.5" />
+            <rect x="0" y="12" width="8" height="8" rx="2.5" />
+            <rect x="12" y="12" width="8" height="8" rx="2.5" />
+          </svg>
+        </button>
+      </nav>
+  
+      <!-- ===== แถวหลัก: flex-wrap ===== -->
+      <div class="flex flex-wrap items-start justify-between">
+  
+        <!-- วงกลม + การ์ดลอย (มือถือ: อยู่บนสุด / เดสก์ท็อป: อยู่ขวา) -->
+        <div class="relative order-1 mt-[43px] flex w-full justify-center lg:order-2 lg:mr-[60px] lg:mt-[101px] lg:w-[550px]">
+  
+          <div class="relative h-[268px] w-[268px] overflow-hidden rounded-full bg-gradient-to-b from-[#ff5b3a] to-[#ff8349] lg:h-[550px] lg:w-[550px]">
+            <svg class="absolute inset-0 h-full w-full" viewBox="0 0 550 550" fill="none"
+                 stroke="white" stroke-opacity="0.25" stroke-width="26">
+              <path d="M-10 116 C 90 104, 170 130, 290 116 S 480 102, 560 118" />
+              <path d="M-10 178 C 80 192, 190 164, 300 180 S 470 192, 560 176" />
+              <path d="M-10 240 C 100 226, 180 254, 290 240 S 470 226, 560 242" />
+              <path d="M-10 302 C 90 316, 190 288, 300 304 S 470 316, 560 300" />
+              <path d="M-10 364 C 100 350, 180 378, 290 364 S 470 350, 560 366" />
+              <path d="M-10 426 C 90 440, 190 412, 300 428 S 470 440, 560 424" />
+            </svg>
+          </div>
+  
+          <!-- การ์ดลอย -->
+          <div class="absolute -left-[14px] top-[70px] w-[75px] rounded-md bg-white p-1.5 shadow-[0_8px_24px_rgba(0,0,0,0.12)]
+                      lg:-left-[97px] lg:top-[166px] lg:h-[178px] lg:w-[160px] lg:rounded-xl lg:p-[13px] lg:shadow-[0_10px_30px_rgba(0,0,0,0.12)]">
+            <div class="h-[48px] rounded-[3px] bg-[#c4c4c4] lg:h-[78px] lg:rounded-md"></div>
+            <p class="mt-2 text-[6px] font-medium leading-[8px] lg:mt-[13px] lg:text-[10px] lg:leading-4">Mountain Scot</p>
+            <div class="mt-2 flex pl-0.5 lg:mt-[11px] lg:pl-[6px]">
+              <span class="h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span class="-ml-1 h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span class="-ml-1 h-[18px] w-[18px] rounded-full bg-[#c4c4c4] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:ring-2"></span>
+              <span class="-ml-1 flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#e5e5e5] text-[6px] ring-1 ring-white lg:-ml-[7px] lg:h-[35px] lg:w-[35px] lg:text-[8px] lg:ring-2">+</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- ข้อความ (มือถือ: ใต้วงกลม / เดสก์ท็อป: ซ้าย) -->
+        <div class="order-2 mt-8 w-full lg:order-1 lg:mt-[189px] lg:w-[560px]">
+          <h1 class="font-['Paytone_One'] text-[44px] font-normal leading-[48px] lg:text-[100px] lg:leading-[110px]">
+            Fuel Mind<br />by Travel
+          </h1>
+          <p class="mt-[7px] text-[16px] leading-9 text-slate-500 lg:mt-[33px] lg:text-[18px] lg:leading-[40px]">
+            Enthusiastically extend extensive<br class="lg:hidden" />
+            customer service<br class="hidden lg:block" />
+            before best<br class="lg:hidden" />
+            breed convergence completely.
+          </p>
         </div>
       </div>
-    
-      <div class="absolute left-[612px] top-[830px] h-[138px] w-[1058px] rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
-    
-        <div class="absolute left-[60px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+  
+      <!-- ===== Search card / bar ===== -->
+      <div class="relative mt-[28px] w-full rounded-2xl bg-white px-[30px] py-6 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+                  lg:ml-auto lg:mt-[63px] lg:h-[138px] lg:w-[1058px] lg:p-0 lg:text-left">
+  
+        <!-- Location -->
+        <div class="border-b border-gray-100 pb-5 lg:absolute lg:left-[60px] lg:top-[40px] lg:border-0 lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Location
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
           </p>
-          <p class="mt-2.5 text-[16px] font-bold leading-6">Cox's Bazar</p>
+          <p class="mt-[7px] text-[16px] font-bold leading-6 lg:mt-2.5">Cox's Bazar</p>
         </div>
-    
-        <div class="absolute left-[194px] top-[48px] h-[42px] w-px bg-gray-200"></div>
-    
-        <div class="absolute left-[234px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+  
+        <div class="absolute left-[194px] top-[48px] hidden h-[42px] w-px bg-gray-200 lg:block"></div>
+  
+        <!-- Date -->
+        <div class="border-b border-gray-100 py-5 lg:absolute lg:left-[234px] lg:top-[40px] lg:border-0 lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Date
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
           </p>
-          <p class="mt-2.5 whitespace-pre text-[16px] font-bold leading-6">Mon, 14 Mar -  Thu, 17 Mar</p>
+          <p class="mt-[7px] whitespace-pre text-[16px] font-bold leading-6 lg:mt-2.5">Mon, 14 Mar -  Thu, 17 Mar</p>
         </div>
-    
-        <div class="absolute left-[468px] top-[48px] h-[42px] w-px bg-gray-200"></div>
-    
-        <div class="absolute left-[509px] top-[40px]">
-          <p class="flex items-center gap-2 text-[16px] leading-6 text-gray-400">
+  
+        <div class="absolute left-[468px] top-[48px] hidden h-[42px] w-px bg-gray-200 lg:block"></div>
+  
+        <!-- Avg. Price -->
+        <div class="py-5 lg:absolute lg:left-[509px] lg:top-[40px] lg:p-0">
+          <p class="flex items-center justify-center gap-2 text-[16px] leading-6 text-gray-400 lg:justify-start">
             Avg. Price
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#ff5b3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg>
           </p>
-          <p class="mt-2.5 text-[16px] font-bold leading-6">$300 - $600</p>
+          <p class="mt-[7px] text-[16px] font-bold leading-6 lg:mt-2.5">$300 - $600</p>
         </div>
-    
-        <button class="absolute left-[845px] top-[35px] flex h-[69px] w-[178px] items-center justify-center gap-[18px] rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white">
+  
+        <!-- Explore -->
+        <button class="mx-auto flex h-[69px] w-[178px] items-center justify-center gap-[18px] rounded-xl bg-gradient-to-r from-[#ff5b3a] to-[#ff8349] text-[16px] font-bold text-white
+                       lg:absolute lg:left-[845px] lg:top-[35px] lg:mx-0">
           Explore
           <svg width="26" height="14" viewBox="0 0 26 14" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M1 7h23M18 1l6 6-6 6" />
           </svg>
         </button>
       </div>
+  
     </div>
   </section>
   
